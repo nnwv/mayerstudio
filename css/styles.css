@@ -4,13 +4,13 @@ body {
     padding: 0px;
     margin: 0;
     color: #fff;
-    background-color: #000;
+    background-color: #cccccc;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     -webkit-text-size-adjust: none;
 }
 a {
-    color: #6699cc;
+    color: #cc0033;
 }
 
 main {
