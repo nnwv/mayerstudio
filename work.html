@@ -1,212 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-   <title>&copy; 2020-2023</title>
-    <link rel='shortcut icon' href='fav.ico' type='image/x-icon'/ >
-    
-    <style>
-      html, body, div, span, header, footer, h1, h2, h3, h4, p, ul, li, a {
+<html>
+<head>
+<title>&copy; 2020-2023</title>
+ <link rel='shortcut icon' href='fav.ico' type='image/x-icon'/ >
+
+<style>
+
+@font-face {
+  font-family: "bauhaus";
+  src: url("BAUHS93.woff");
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.125 em;
+  margin: 16px;
+  padding:0;
+  background: #282828;
+  text-align: left; 
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1 em;
+  color: dimgrey;
+}
+
+a:link {
+  color: black;
+}
+
+ #slider {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: auto;
         margin: 0;
         padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
       }
-      header, footer, main {
-        display: block;
-      }
-      body {
-        font-family: "Times New Roman", Times, serif;
-        line-height: 1;
-        background: #282828;
-        color: #cbcb71;
-        margin: 40px;
-      }
-      a {
-        color: #cbcb71;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      header {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 16px;
-      }
-      header a {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 40px;
-      }
-      header a:hover {
-        text-decoration: none;
-      }
-      main {
-        position: absolute;
-        top: 40px;
+      
+      .slider-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(100% - 80px);
-        height: calc(100vh - 80px);
-      }
-      main h1 {
-        font-size: 160px;
-        line-height: .825em;
-        text-transform: uppercase;
-        text-align: center;
-        -webkit-text-stroke: 3px;
-        margin-bottom: 80px;
-      }
-      footer {
-        position: absolute;
-        bottom: 40px;
-        display: flex;
-        justify-content: space-between;
-        width: calc(100% - 80px);
-      }
-      footer h2 {
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 24px;
-      }
-      footer ul {
-        list-style-type: none;
-        line-height: 20px;
+        height: 100vh;
       }
       
-      footer .right-column {
-        text-align: right;
-      }
-      .sr-only {
+      #slider img {
         position: absolute;
-        left: -9999px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        width: 100%;
+        height: auto;
+	  
+	  border-radius: 2.5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
-      @media screen and (min-width: 1400px) {
-        main h1 {
-          font-size: 200px;
-          -webkit-text-stroke: 4px;
-        }
+      
+      #slider img.active {
+        opacity: .8;
       }
-      @media screen and (min-width: 1600px) {
-        main h1 {
-          font-size: 240px;
-          -webkit-text-stroke: 5px;
-        }
-      }
-      @media screen and (max-width: 1280px) {
-        main h1 {
-          margin-bottom: 120px;
-        }
-        footer .left-column ul {
-          column-gap: 80px;
-        }
-      }
-      @media screen and (max-width: 1024px) {
-        main h1 {
-          font-size: 140px;
-          -webkit-text-stroke: 2px;
-        }
-        footer .left-column ul {
-          column-gap: 40px;
-        }
-      }
-      @media screen and (max-width: 980px) {
-        body {
-          margin: 24px;
-        }
-        header a {
-          padding: 24px;
-        }
-        main {
-          top: 24px;
-          width: calc(100% - 48px);
-          height: calc(100vh - 48px);
-        }
-        main h1 {
-          font-size: 120px;
-        }
-        footer {
-          bottom: 24px;
-          width: calc(100% - 48px);
-        }
-        footer ul {
-          font-size: 15px;
-        }
-      }
-      @media screen and (max-width: 767px) {
-        header {
-          position: static;
-        }
-        main {
-          position: relative;
-          top: 0;
-          width: auto;
-          height: inherit;
-        }
-        main h1 {
-          font-size: 100px;
-          line-height: .875em;
-          margin-top: 200px;
-          margin-bottom: 200px;
-        }
-        footer {
-          position: relative;
-          top: 0;
-          flex-direction: column;
-          width: 100%;
-        }
-        footer .left-column ul {
-          columns: 1;
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 60px;
-        }
-        footer .left-column li:first-child {
-          margin-bottom: 24px;
-        }
-        footer .right-column {
-          text-align: left;
-        }
-        footer .right-column li:last-child {
-          margin-bottom: 40px;
-        }
-      }
-      @media screen and (max-width: 599px) {
-        main h1 {
-          font-size: 80px;
-        }
-      }
-      @media screen and (max-width: 479px) {
-        main h1 {
-          font-size: 60px;
-          line-height: .9375em;
-          -webkit-text-stroke: 1px;
-        }
-      }
-      @media screen and (max-width: 374px) {
-        main h1 {
-          font-size: 50px;
-        }
-      }
-    </style>
-  </head>
-  <body id="work">
-    <header>
-      <a href="https://streaklinks.com/BYGS3GyHh-CRiQv2igjzLJwr/https%3A%2F%2Fmoranmorangallery.com%2Fwp-content%2Fuploads%2F2021%2F12%2FCS-CV_01-27.pdf">Home</a>
-    </header>
-  
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cbcb71;
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+  font-family: bauhaus;
+}
 
 
 
-  </body>
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="slider-wrapper">
+      <div id="slider">
+        <img src="2web.jpg" class="active" />
+        <img src="2aweb.jpg" />
+        <img src="3web.jpg" />
+        <img src="3aweb.jpg" />
+        <img src="4web.jpg" />
+        <img src="5web.jpg" />
+       </div>
+    </div>
+
+<div class="footer"><p><a href="index.html">Home</a></p></div>
+
+
+<script>
+      var images = document.querySelectorAll("#slider img");
+      var currentImageIndex = 0;
+      var timer;
+      
+      function nextImage() {
+        var currentImage = images[currentImageIndex];
+        currentImage.classList.remove("active");
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        var nextImage = images[currentImageIndex];
+        nextImage.classList.add("active");
+        
+        if (currentImageIndex === images.length - 1) {
+          clearInterval(timer); // Stop the slideshow
+        }
+      }
+      
+      images[currentImageIndex].classList.add("active");
+      timer = setInterval(nextImage, 5000);
+    </script>
+
+
+</body>
 </html>
