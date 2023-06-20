@@ -1,0 +1,36 @@
+body {
+    background-color: #282828;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    border-bottom-right-radius: 2px;
+    
+    }
+    
+    
+    p {
+        font-size: 18px;
+        color: whitesmoke;
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    a:link {
+      color: white;
+    }
+    
+    a:visited {
+      color: whitesmoke;
+    }
+    
+    a:hover {
+      background-color: blue;
+    }
+    
+    
+    h1 {
+        color: whitesmoke;
+        margin: 0;
+    }
