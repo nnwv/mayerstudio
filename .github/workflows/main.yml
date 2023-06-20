@@ -14,4 +14,5 @@ jobs:
         server: sftp.sd6.gpaas.net
         username: 7023271
         password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
         server-dir: /lamp0/web/vhosts/mayerstudio.com/htdocs/
