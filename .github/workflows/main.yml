@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: sftp://sftp.sd6.gpaas.net
+        server: sftp.sd6.gpaas.net
         username: 7023271
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /lamp0/web/vhosts/mayerstudio.com/htdocs/
