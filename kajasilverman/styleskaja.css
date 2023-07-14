@@ -32,3 +32,8 @@ a:hover {
 h1 {
     color: whitesmoke;
 }
+
+img {
+  width: 600px;
+  height: 100%;
+}
