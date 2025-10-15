@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="icon" type="image/x-icon" href="fav.png">
-  <title>Design and Marketing | Philadelphia, PA</title>
+  <title>Philadelphia, PA</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -16,37 +18,49 @@
       justify-content: center;
       align-items: center;
       font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+      background-color: #ffffff;
     }
 
     .center-text {
       font-weight: bold;
-      font-size: clamp(40px, 9vw, 90px);  /* bumped up */
-      line-height: 1.05;
-      letter-spacing: -2px;
-      text-align: left;
-      padding: 6vw;
-      max-width: 30ch;
+      font-size: clamp(28px, 6vw, 70px);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      padding: 5vw;
+      max-width: 90vw;
+      box-sizing: border-box;
     }
 
     a {
       text-decoration: none;
       color: rgb(0, 0, 0);
+      word-break: break-word;
     }
 
     a:hover {
       background-color: #679966;
-      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        text-align: left;
+      }
+      .center-text {
+        max-width: 30ch;
+        padding: 6vw;
+      }
     }
   </style>
 </head>
 <body>
   <div class="center-text">
-     Graphic Design, Digital Marketing and AI Consultation from Philadelphia. 
- <br>
-<br>
-<a href="mailto:info@mayerstudio.org?subject=Hello%20Austin&">info@mayerstudio.org</a>
- <br>
-  ©2021-2025 
+    Graphic Design<br>
+    Digital Marketing<br>
+    AI Consultation<br>
+    <br><br>
+    <a href="mailto:info@mayerstudio.org?subject=Hello%20Austin&">info@mayerstudio.org</a><br>
+    ©2021-2025
   </div>
 </body>
 </html>
