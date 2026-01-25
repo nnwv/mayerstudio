@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="icon" type="image/x-icon" href="fav.png">
-  <title>Philadelphia, PA</title>
+  <title>Design and Marketing | Philadelphia, PA</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      background-color: #000; /* dark background */
+      color: #fff; /* white text */
+      font-family: Helvetica, Arial, sans-serif;
     }
 
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Helvetica, Arial, sans-serif;
-      text-align: center;
-      background-color: #ffffff;
+      text-align: center; /* center for mobile first */
     }
 
     .center-text {
@@ -34,14 +35,17 @@
 
     a {
       text-decoration: none;
-      color: rgb(0, 0, 0);
+      color: #ffffff;
       word-break: break-word;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     a:hover {
       background-color: #679966;
+      color: #000;
     }
 
+    /* Desktop and larger tablets: left align for intentional layout */
     @media (min-width: 768px) {
       body {
         text-align: left;
@@ -58,9 +62,9 @@
     Graphic Design<br>
     Digital Marketing<br>
     AI Consultation<br>
-    <br><br>
+    from Philadelphia.<br><br>
     <a href="mailto:info@mayerstudio.org?subject=Hello%20Austin&">info@mayerstudio.org</a><br>
-    ©2021-2025
+    ©2021–2025
   </div>
 </body>
 </html>
