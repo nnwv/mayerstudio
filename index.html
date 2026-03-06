@@ -95,12 +95,27 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-color:rgb(0, 0, 0);
+color:rgb(0,0,0);
 font-size:clamp(40px,8vw,88px);
 font-weight:700;
 letter-spacing:4px;
 pointer-events:none;
 text-align:center;
+text-decoration:underline;
+max-width:80%;
+word-break:break-word;
+}
+
+/* MOBILE TYPE FIX */
+
+@media (max-width:600px){
+
+.label{
+letter-spacing:2px;
+font-size:clamp(32px,10vw,60px);
+max-width:70%;
+}
+
 }
 
 /* FOOTER */
@@ -110,7 +125,7 @@ max-width:900px;
 margin:80px auto 40px auto;
 padding:0 24px;
 font-size:16px;
-color:rgba(0, 0, 0, 0.6);
+color:rgba(0,0,0,0.6);
 text-align:center;
 }
 
@@ -128,11 +143,10 @@ text-align:center;
 <p>
 Computer Aided Design & Restoration Services<br>
 Philadelphia, PA | San Diego, CA 
-
 </p>
 
 <p style="margin-top:14px;">
-    +1 (856) 390-3608<br>
++1 (856) 390-3608<br>
 info@mayerstudio.org<br>
 ©2021–2026
 </p>
@@ -142,12 +156,12 @@ info@mayerstudio.org<br>
 <div class="header-right">
 
 <p>
-Mayer Studio is a building science practice providing computer-aided design and restoration services for existing buildings. The collaborative based organization works across residential, cultural, and historic structures with a focus on documentation, analysis, and the careful stewardship of the built environment for future generations.</p>
+Mayer Studio is a building science practice providing computer-aided design and restoration services for existing buildings. The collaborative based organization works across residential, cultural, and historic structures with a focus on documentation, analysis, and the careful stewardship of the built environment for future generations.
+</p>
 
 </div>
 
 </header>
-
 
 <div class="gallery">
 
@@ -183,12 +197,9 @@ Mayer Studio is a building science practice providing computer-aided design and 
 
 </div>
 
-
 <footer>
 
-info@mayerstudio.org 
-<br>
-© 2021–2026
+Mayer Studio ©2021–2026
 
 </footer>
 
